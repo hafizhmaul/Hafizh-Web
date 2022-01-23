@@ -1,6 +1,7 @@
+import { config } from '@/utils/config';
 import Image from 'next/image';
 import { Tooltip } from 'react-tippy';
-import { config } from '../../utils/config';
+
 
 const SocmedLink = () => {
   return (

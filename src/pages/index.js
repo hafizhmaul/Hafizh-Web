@@ -1,10 +1,12 @@
-import { AboutMe, HomeLayout, LandingPage } from '../components'
+import { AboutMe, Experience, HomeLayout, LandingPage } from "@/components";
+
 
 export default function Home() {
   return (
     <HomeLayout>
-      <LandingPage/>
-      <AboutMe/>
+      <LandingPage />
+      <AboutMe />
+      <Experience />
     </HomeLayout>
   )
 }

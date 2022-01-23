@@ -1,0 +1,11 @@
+{
+  "moduleResolution": "node",
+  "compilerOptions": {
+    "jsx": "preserve",
+    "baseUrl": "./src",
+    "paths": {
+      "@/*": ["*"]
+    }
+  },
+  "exclude": ["node_modules", ".next"]
+}

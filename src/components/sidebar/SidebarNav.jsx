@@ -1,7 +1,8 @@
+import { config } from "@/utils/config";
 import { Link } from "react-scroll";
-import { config } from "../../utils/config";
 
 const SidebarNav = () => {
+
   return (
     <div className='sidebar-position'>
       {config.navLinks.map((item, idx) => (

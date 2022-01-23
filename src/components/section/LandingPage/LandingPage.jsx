@@ -1,7 +1,6 @@
-import React from 'react';
+import { Divider, Layout, SocmedLink } from '@/components';
+import { config } from '@/utils/config';
 import { TextLoop } from 'react-text-loop-next';
-import { Divider, Layout, SocmedLink } from '../..';
-import { config } from '../../../utils/config'
 
 const LandingPage = () => {
   return (

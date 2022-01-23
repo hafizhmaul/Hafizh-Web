@@ -1,9 +1,9 @@
-import { Layout } from "../..";
+import { Layout } from "@/components"
 
 const AboutMe = () => {
   return (
     <Layout id={"about-page"}>
-      <div>About</div>
+      About Me
     </Layout>
   )
 };
