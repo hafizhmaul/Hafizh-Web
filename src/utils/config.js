@@ -3,6 +3,38 @@ import InstagramLogo from '../assets/img/Instagram.svg'
 import LinkedinLogo from '../assets/img/Linkedin.svg'
 import TwitterLogo from '../assets/img/Twitter.svg'
 import DribbbleLogo from '../assets/img/Dribbble.svg'
+import {
+  SiAdobexd,
+  SiBootstrap,
+  SiCss3,
+  SiFigma,
+  SiFirebase,
+  SiGit,
+  SiGoogleanalytics,
+  SiHtml5,
+  SiJavascript,
+  SiJira,
+  SiJquery,
+  SiLaravel,
+  SiMarkdown,
+  SiMaterialui,
+  SiMobx,
+  SiMongodb,
+  SiMysql,
+  SiNextdotjs,
+  SiNodedotjs,
+  SiNotion,
+  SiPhp,
+  SiPostman,
+  SiPrettier,
+  SiReact,
+  SiRedux,
+  SiSass,
+  SiTailwindcss,
+  SiTypescript,
+  SiVisualstudiocode,
+  SiVite,
+} from 'react-icons/si';
 
 
 export const config = {
@@ -62,10 +94,86 @@ export const config = {
       label: 'contact-page',
       url: '/contact',
     },
+    {
+      name: 'Resume',
+      label: 'resume-link',
+      url: 'https://bit.ly/3uit77k',
+    },
+  ],
+  
+  skillList: [
+    {
+      icon: SiHtml5,
+      name: 'HTML5',
+    },
+    {
+      icon: SiCss3,
+      name: 'CSS3',
+    },
+    {
+      icon: SiJavascript,
+      name: 'JavaScript',
+    },
+    {
+      icon: SiTypescript,
+      name: 'TypeScript',
+    },
+    {
+      icon: SiReact,
+      name: 'React',
+    },
+    {
+      icon: SiNextdotjs,
+      name: 'Next.js',
+    },
+    {
+      icon: SiTailwindcss,
+      name: 'Tailwind CSS',
+    },
+    {
+      icon: SiSass,
+      name: 'SCSS',
+    },
+    {
+      icon: SiFigma,
+      name: 'Figma',
+    },
+    {
+      icon: SiAdobexd,
+      name: 'Adobe XD',
+    },
+    {
+      icon: SiFirebase,
+      name: 'Firebase',
+    },
+    {
+      icon: SiRedux,
+      name: 'Redux',
+    },
+    {
+      icon: SiGit,
+      name: 'Git',
+    },
+    {
+      icon: SiMobx,
+      name: 'MobX',
+    },
+    {
+      icon: SiMaterialui,
+      name: 'Material UI',
+    },
+    {
+      icon: SiBootstrap,
+      name: 'Bootstrap',
+    },
+    {
+      icon: SiVisualstudiocode,
+      name: 'Visual Studio Code',
+    },
   ],
 
   colors: {
-    blackSolid: '#272833',
+    blackSolid: '#212123',
     yellowOrigin: '#FCD12A'
   },
 }

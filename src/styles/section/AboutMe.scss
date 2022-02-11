@@ -1,0 +1,55 @@
+#about-page {
+  @apply justify-start items-center block py-10
+}
+
+#profile-desc {
+  width: 30vw;
+  @apply text-base mt-4 leading-8;
+}
+
+.image-container {
+
+  width: 350px;
+
+  .profile-image {
+    object-fit: contain;
+  }
+}
+
+// Tablet view
+@media only screen and (max-width: 768px) {
+  #profile-container {
+    @apply block
+  }
+
+  #profile-desc {
+    width: fit-content;
+    
+  }
+
+  #aboutme-headline {
+    @apply text-3xl
+  }
+
+  .image-container {
+    display: none;
+    width: 250px;
+    margin: 0 auto;
+    @apply mt-4;
+  
+    .profile-image {
+      object-fit: contain;
+    }
+  }
+}
+
+// Mobile view
+@media only screen and (max-width: 460px) {
+  #about-page {
+    @apply p-6
+  }
+  
+  #profile-desc { 
+    @apply text-sm;
+  }
+}

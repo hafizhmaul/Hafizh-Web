@@ -1,0 +1,33 @@
+#home-page {
+  @apply justify-start items-center flex
+}
+
+// Tablet view
+@media only screen and (max-width: 768px) {
+  #greeting-section {
+    @apply text-xl;
+  }
+
+  #full-name {
+    @apply text-5xl;
+  }
+}
+
+// Mobile view
+@media only screen and (max-width: 460px) {
+  #home-page {
+    @apply mx-auto;
+  }
+
+  #greeting-section {
+    @apply text-lg;
+  }
+
+  #full-name {
+    @apply text-4xl;
+  }
+
+  #profile {
+    @apply text-xs;
+  }
+}

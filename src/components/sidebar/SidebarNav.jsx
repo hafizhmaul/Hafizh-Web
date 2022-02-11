@@ -6,8 +6,8 @@ const SidebarNav = () => {
   return (
     <div className='sidebar-position'>
       {config.navLinks.map((item, idx) => (
-        <div key={idx} className='my-10 mr-10 cursor-pointer'>
-          <Link activeClass="active" to={item.label} spy={true} smooth={true} offset={0} duration={50} delay={0}>{item.name}</Link>
+        <div key={idx} className='mr-10 cursor-pointer my-5 text-sm'>
+          <Link activeClass="active" to={item.label} spy={true} smooth={true} offset={-150} duration={50} delay={0}>{item.name}</Link>
         </div>
       ))}
     </div>

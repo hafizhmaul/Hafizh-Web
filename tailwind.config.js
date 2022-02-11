@@ -8,6 +8,10 @@ module.exports = {
       colors: {
         'yellow-origin': '#FCD12A',
       },
+      screens: {
+        'tablet': {'max': '768px'},
+        'phone': {'max': '460px'},
+      },
     },
   },
   plugins: [],

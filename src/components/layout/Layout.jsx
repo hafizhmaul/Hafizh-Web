@@ -1,7 +1,7 @@
-const Layout = ({ children, id }) => {
+const Layout = ({ children, id, margin }) => {
   return (
-    <div className='h-screen flex justify-start items-center' id={id}>
-      <section className='py-16'>
+    <div className='h-screen' id={id}>
+      <section style={{ margin: `${margin}` }}>
         <div>{children}</div>
       </section>
     </div>

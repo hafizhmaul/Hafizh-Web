@@ -1,9 +1,15 @@
+// fonts
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
 
+// pages and section
 @import "./layout/HomeLayout.scss";
 @import "./section/LandingPage.scss";
+@import "./section/AboutMe.scss";
+@import "./section/Experience.scss";
 @import "./sidebar/SidebarNav.scss";
 
+// library
 @import "./hamburger.scss";
 
 @tailwind base;
@@ -17,9 +23,10 @@
 html,
 body {
   scroll-behavior: smooth;
-  background: #272833;
+  background: #212123;
   font-family: "Nunito", sans-serif;
 }
+
 
 /* Tippy */
 .tippy-tooltip [x-circle] {
@@ -53,7 +60,7 @@ body {
   position: fixed;
   right: 0;
   top: 0;
-  background: #2a2b36;
+  background: #252527;
   overflow-y: scroll;
   color: white;
   display: flex;

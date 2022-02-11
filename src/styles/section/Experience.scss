@@ -1,0 +1,128 @@
+#experience-page {
+  @apply flex justify-center;
+}
+
+.tab-company {
+  @apply py-6 cursor-pointer w-64 pl-4 text-sm font-bold;
+  letter-spacing: 2px;
+
+  &:hover {
+    @apply text-yellow-origin;
+    background: rgba(45, 45, 57, 0.287);
+  }
+}
+
+#experience-container {
+  width: 50vw;
+}
+
+#tab-experience {
+  @apply flex;
+}
+
+#tab-summary {
+  @apply ml-4;
+}
+
+#company-url {
+  @apply text-yellow-origin;
+
+  &:after {
+    @apply border border-yellow-origin;
+    display: block;
+    content: "";
+    transform: scaleX(0);
+    transition: transform 250ms ease-in-out;
+    transform-origin: 50% 50%;
+  }
+  &:hover:after {
+    transform: scaleX(1);
+    transform-origin: 50% 50%;
+  }
+}
+
+#range-date {
+  @apply text-sm mt-2;
+  font-family: "Fira Code", monospace;
+  font-weight: normal;
+}
+
+// Tablet view
+@media only screen and (max-width: 768px) {
+  #experience-page {
+    @apply px-0 ml-0
+  }
+
+  .tab-company {
+    @apply py-6 cursor-pointer w-44 pl-4 text-sm font-bold;
+  }
+
+  #work-summary {
+    @apply text-gray-900
+  }
+}
+
+// Mobile view
+@media only screen and (max-width: 460px) {
+  #experience-page {
+    @apply block p-6;
+  }
+
+  #experience-container {
+    width: fit-content;
+  }
+
+
+  #experience-headline {
+    @apply text-3xl;
+  }
+
+  #tab-experience {
+    @apply block;
+  }
+
+  #tablist-experience {
+    @apply flex justify-center;
+  }
+
+  .tab-company {
+    @apply py-3 mt-4 w-28 pl-0 text-center;
+  }
+
+  #tab-summary {
+    @apply mt-6 ml-0;
+  }
+
+  #company-info {
+    @apply text-xl
+  }
+
+  #work-summary {
+    @apply text-sm;
+  }
+}
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

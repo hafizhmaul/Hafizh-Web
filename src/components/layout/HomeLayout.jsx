@@ -6,13 +6,9 @@ import { useWindowSize } from "@/hooks/useWindowSize";
 const HomeLayout = ({ children }) => {
   const size = useWindowSize();
   const [openDrawer, setOpenDrawer] = React.useState(false);
+  
   const handleDrawer = () => {
     setOpenDrawer(!openDrawer)
-  }
-
-  const handleClick = () => {
-    setCloseDrawer(false)
-    console.log(closeDrawer)
   }
 
   return (
