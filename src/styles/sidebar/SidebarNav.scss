@@ -10,29 +10,30 @@
 
 // Tablet view
 @media only screen and (max-width: 768px) {
-  #sidebar, #sidebar-resume {
-    @apply m-5 text-lg
+  #sidebar,
+  #sidebar-resume {
+    @apply m-5 text-lg;
   }
 
   #sidebar-resume {
-    color: #FCD12A;
-    border: 2px solid #FCD12A;
+    color: #7eca9c;
+    border: 2px solid #7eca9c;
     border-radius: 5px;
     padding: 0.5rem 2rem;
     margin-top: 3rem;
   }
-
 }
 
 // Mobile view
 @media only screen and (max-width: 460px) {
-  #sidebar, #sidebar-resume {
-    @apply m-5 text-base
+  #sidebar,
+  #sidebar-resume {
+    @apply m-5 text-base;
   }
 
   #sidebar-resume {
-    color: #FCD12A;
-    border: 2px solid #FCD12A;
+    color: #7eca9c;
+    border: 2px solid #7eca9c;
     border-radius: 5px;
     padding: 10px 30px;
     padding: 0.5rem 2rem;

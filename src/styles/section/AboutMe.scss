@@ -8,8 +8,12 @@
 }
 
 .image-container {
+  display: flex;
+  align-items: center;
 
-  width: 350px;
+  width: 100%;
+  max-width: 350px;
+  height: auto;
 
   .profile-image {
     object-fit: contain;
@@ -17,7 +21,11 @@
 }
 
 // Tablet view
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 900px) {
+  #about-page {
+    @apply p-6
+  }
+
   #profile-container {
     @apply block
   }
@@ -32,8 +40,7 @@
   }
 
   .image-container {
-    display: none;
-    width: 250px;
+    width: 40%;
     margin: 0 auto;
     @apply mt-4;
   
@@ -44,11 +51,11 @@
 }
 
 // Mobile view
-@media only screen and (max-width: 460px) {
-  #about-page {
-    @apply p-6
+@media only screen and (max-width: 460px) {  
+  .image-container {
+    display: none;
   }
-  
+
   #profile-desc { 
     @apply text-sm;
   }

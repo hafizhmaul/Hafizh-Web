@@ -20,7 +20,7 @@ const SocmedLink = () => {
           html={
             <div
               style={{ backgroundColor: `${config.colors.blackSolid}` }}
-              className='inline-block p-2 mt-3 rounded-md shadow-md text-white border border-yellow-400 transition-all ease-out'>
+              className='inline-block p-2 mt-3 rounded-md shadow-md text-white border border-green-200 transition-all ease-out'>
               {item.name}
             </div>}
         >

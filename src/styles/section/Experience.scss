@@ -7,13 +7,13 @@
   letter-spacing: 2px;
 
   &:hover {
-    @apply text-yellow-origin;
+    @apply text-origin-color;
     background: rgba(45, 45, 57, 0.287);
   }
 }
 
 #experience-container {
-  width: 50vw;
+  width: 60vw;
 }
 
 #tab-experience {
@@ -25,10 +25,10 @@
 }
 
 #company-url {
-  @apply text-yellow-origin;
+  @apply text-origin-color;
 
   &:after {
-    @apply border border-yellow-origin;
+    @apply border border-origin-color;
     display: block;
     content: "";
     transform: scaleX(0);
@@ -48,9 +48,9 @@
 }
 
 // Tablet view
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 900px) {
   #experience-page {
-    @apply px-0 ml-0
+    @apply px-0 ml-0;
   }
 
   .tab-company {
@@ -58,12 +58,16 @@
   }
 
   #work-summary {
-    @apply text-gray-900
+    @apply text-gray-900;
+  }
+
+  #experience-container {
+    width: 80vw;
   }
 }
 
 // Mobile view
-@media only screen and (max-width: 460px) {
+@media only screen and (max-width: 550px) {
   #experience-page {
     @apply block p-6;
   }
@@ -71,7 +75,6 @@
   #experience-container {
     width: fit-content;
   }
-
 
   #experience-headline {
     @apply text-3xl;
@@ -94,7 +97,7 @@
   }
 
   #company-info {
-    @apply text-xl
+    @apply text-xl;
   }
 
   #work-summary {

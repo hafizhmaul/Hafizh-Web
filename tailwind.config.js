@@ -6,11 +6,11 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'yellow-origin': '#FCD12A',
+        'origin-color': '#7ECA9C',
       },
       screens: {
         'tablet': {'max': '768px'},
-        'phone': {'max': '460px'},
+        'phone': {'max': '550px'},
       },
     },
   },

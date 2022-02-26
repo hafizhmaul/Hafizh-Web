@@ -173,7 +173,7 @@ export const config = {
   ],
 
   colors: {
-    blackSolid: 'rgb(24, 24, 24)',
-    yellowOrigin: '#FCD12A'
+    blackSolid: '#343a40',
+    originColor: '#7ECA9C'
   },
 }
