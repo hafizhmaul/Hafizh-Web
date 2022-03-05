@@ -1,4 +1,4 @@
-import { AboutMe, Experience, HomeLayout, LandingPage } from "@/components";
+import { AboutMe, Experience, HomeLayout, LandingPage, Work } from "@/components";
 
 
 export default function Home() {
@@ -7,6 +7,7 @@ export default function Home() {
       <LandingPage />
       <AboutMe />
       <Experience />
+      <Work/>
     </HomeLayout>
   )
 }

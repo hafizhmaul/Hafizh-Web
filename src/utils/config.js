@@ -61,11 +61,11 @@ export const config = {
       url: 'https://dribbble.com/hafizhmaulana',
       logo: DribbbleLogo
     },
-    {
-      name: 'Twitter',
-      url: 'https://twitter.com/nocturnefish',
-      logo: TwitterLogo
-    },
+    // {
+    //   name: 'Twitter',
+    //   url: 'https://twitter.com/nocturnefish',
+    //   logo: TwitterLogo
+    // },
   ],
 
   navLinks: [
