@@ -1,10 +1,10 @@
-import React, { Fragment } from "react";
 import { Divider, Layout } from "@/components";
-import { collection, onSnapshot, query } from "firebase/firestore";
+import { config } from "@/utils/config";
 import db from "@/utils/firebase";
 import { Tab } from "@headlessui/react";
-import { IoMdArrowDropright } from 'react-icons/io'
-import { config } from "@/utils/config";
+import { collection, onSnapshot, query } from "firebase/firestore";
+import React, { Fragment } from "react";
+import { IoMdArrowDropright } from 'react-icons/io';
 
 const Experience = () => {
   const [works, setWorks] = React.useState([]);
@@ -12,9 +12,9 @@ const Experience = () => {
 
   React.useEffect(() => {
     const colRef = collection(db, 'works-experience')
-    
+
     const q = query(colRef)
-    
+
     onSnapshot(q, (snapshot) => {
       setLoading(true)
       let work = [];

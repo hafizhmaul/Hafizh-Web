@@ -7,7 +7,7 @@ export default function Home() {
       <LandingPage />
       <AboutMe />
       <Experience />
-      <Work/>
+      {/* <Work/> */}
     </HomeLayout>
   )
 }

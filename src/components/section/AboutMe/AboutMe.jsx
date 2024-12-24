@@ -1,8 +1,8 @@
-import * as React from 'react';
-import { Divider, Layout } from "@/components";
 import ProfilePhoto from '@/assets/img/profile-img.png';
-import Image from "next/image";
+import { Divider, Layout } from "@/components";
 import { config } from '@/utils/config';
+import Image from "next/image";
+import * as React from 'react';
 import { Tooltip } from 'react-tippy';
 
 const AboutMe = () => {
@@ -16,14 +16,10 @@ const AboutMe = () => {
           </div>
           <div id="profile-desc" >
             <p>
-              Hi, my name is
+              Hi, I&apos;m
               <strong className="hover:text-origin-color transition-all ease-in">
                 <a href='https://www.linkedin.com/in/hafizhmaulana/' target="_blank" rel="noreferrer"> Hafizh</a>
-              </strong> and I enjoy bridging the gap between engineering and design, combining my technical knowledge with my keen eye for design to create a beautiful product.
-            </p>
-            <br />
-            <p>
-              My focus is on creating engaging, accessible, and performant interfaces for humans.
+              </strong> a Frontend Engineer with over 3 years of experience building functional, user-friendly interfaces using React, TypeScript, and modern tools. I’ve worked across industries like E-Learning, FinTech, and Web3, delivering impactful projects such as blockchain integrations and performance-optimized web applications.
             </p>
           </div>
           <div id="aboutme-section" className="flex items-center mt-10">
@@ -35,7 +31,31 @@ const AboutMe = () => {
               The skills, tools, and technologies I use to bring your products to life:
             </p>
             <div id="tech-skill-section" className='flex flex-wrap'>
-              {config.skillList.map((item, idx) => (
+              {config?.skillList.map((skill, index) => {
+                const Icon = skill.icon; // Ensure this isn't undefined
+                if (!Icon) return null; // Skip undefined icons
+
+                return (
+                  <Tooltip
+                    key={index}
+                    title={skill.name}
+                    position="bottom"
+                    className='mr-8'
+                    html={
+                      <div
+                        style={{ backgroundColor: `${config.colors.blackSolid}` }}
+                        className='inline-block p-2 rounded-md shadow-md text-white border border-green-300 pointer-events-none'>
+                        {skill.name}
+                      </div>}
+                  >
+                    <span className='cursor-pointer'>
+                      <Icon className='mt-6 hover:fill-origin-color transition-all ease-in' size={30} /> {/* Renders the icon */}
+
+                    </span>
+                  </Tooltip>
+                );
+              })}
+              {/* {config.skillList.map((item, idx) => (
                 <Tooltip
                   key={idx}
                   title={item.name}
@@ -52,7 +72,7 @@ const AboutMe = () => {
                     <item.icon className='mt-6 hover:fill-origin-color transition-all ease-in' size={30} />
                   </span>
                 </Tooltip>
-              ))}
+              ))} */}
             </div>
           </div>
         </div>

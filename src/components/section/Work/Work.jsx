@@ -7,7 +7,7 @@ const Work = () => {
   const [project, setProject] = React.useState([])
 
   React.useEffect(() => {
-    fetch('https://api.github.com/users/git-hafizh/repos?per_page=100')
+    fetch('https://api.github.com/users/hafizhmaul/repos?per_page=100')
       .then((res) => res.json())
       .then((data) => setProject(data))
   },[])
